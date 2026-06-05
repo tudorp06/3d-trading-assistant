@@ -1,0 +1,35 @@
+# Core
+Python>=3.10
+
+# WebSocket & Real-time
+websockets==11.0.3
+polygon-io==1.13.0
+finnhub-python==1.3.11
+
+# Data Processing
+pandas==2.1.3
+numpy==1.24.3
+
+# LLM & AI
+openai==1.3.0
+google-generativeai==0.3.0
+
+# Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+twython==3.10.0
+
+# Database
+sqlite3  # Built-in
+
+# Async
+aiohttp==3.9.1
+aiofiles==23.2.1
+
+# Env & Config
+python-dotenv==1.0.0
+pydantic==2.5.0
+
+# Logging
+python-json-logger==2.0.7
