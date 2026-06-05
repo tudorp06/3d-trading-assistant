@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Trading Assistant - Portfolio Analysis Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h2>📊 Your Portfolio</h2></div>
+            <div class="portfolio-input">
+                <input type="text" id="tickerInput" placeholder="Add ticker (e.g., NVDA)" />
+                <button id="addTickerBtn">Add</button>
+            </div>
+            <div class="portfolio-list">
+                <h3>Monitoring:</h3>
+                <ul id="tickersList"></ul>
+            </div>
+            <div class="portfolio-stats">
+                <div class="stat">
+                    <span class="label">Active Triggers:</span>
+                    <span class="value" id="triggerCount">0</span>
+                </div>
+            </div>
+            <button id="connectBtn" class="btn-primary">🔗 Connect Backend</button>
+            <div id="connectionStatus" class="connection-status">Disconnected</div>
+        </aside>
+        <main class="main-content">
+            <section class="bot-container">
+                <canvas id="botCanvas"></canvas>
+                <div class="bot-overlay">
+                    <div class="speech-bubble" id="speechBubble">
+                        <p id="analysisText">Waiting for market events...</p>
+                    </div>
+                </div>
+            </section>
+            <section class="analysis-panel">
+                <div class="analysis-history" id="analysisHistory"></div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/bot-renderer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
